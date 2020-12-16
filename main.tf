@@ -25,6 +25,7 @@ resource "aws_subnet" "private" {
   }
 }
 
+
 # Create var.az_count public subnets, each in a different AZ
 resource "aws_subnet" "public" {
   count                   = "${var.az_count}"
